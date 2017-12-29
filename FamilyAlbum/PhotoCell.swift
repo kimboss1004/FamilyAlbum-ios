@@ -14,8 +14,14 @@ class PhotoCell: UITableViewCell {
     @IBOutlet weak var photoLabel: UILabel!
     
     func setAlbum(album: Albums){
-        photoImage.image = album.image?.getDataInBackground()
         photoLabel.text = album.message
+        
+        guard let pfFile = album.image else { return }
+        pfFile.getDataInBackground { (data, error) in
+            if let data = data {
+                self.photoImage.image = UIImage(data: data)
+            }
+        }
     }
 
 }

@@ -11,6 +11,8 @@
 		8412E5C81FF4BB7000EB74D6 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8412E5C71FF4BB7000EB74D6 /* PhotoCell.swift */; };
 		8412E5CA1FF5420300EB74D6 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8412E5C91FF5420300EB74D6 /* Helper.swift */; };
 		8412E5CC1FF566B000EB74D6 /* Albums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8412E5CB1FF566B000EB74D6 /* Albums.swift */; };
+		8412E5CE1FF5ADAB00EB74D6 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8412E5CD1FF5ADAA00EB74D6 /* ParseUI.framework */; };
+		8412E5D01FF5AEDD00EB74D6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8412E5CF1FF5AEDC00EB74D6 /* ProfileViewController.swift */; };
 		846373EB1FF48EF500E12B90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846373EA1FF48EF500E12B90 /* AppDelegate.swift */; };
 		846373ED1FF48EF500E12B90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846373EC1FF48EF500E12B90 /* ViewController.swift */; };
 		846373F01FF48EF500E12B90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846373EE1FF48EF500E12B90 /* Main.storyboard */; };
@@ -29,6 +31,8 @@
 		8412E5C71FF4BB7000EB74D6 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		8412E5C91FF5420300EB74D6 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		8412E5CB1FF566B000EB74D6 /* Albums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Albums.swift; sourceTree = "<group>"; };
+		8412E5CD1FF5ADAA00EB74D6 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		8412E5CF1FF5AEDC00EB74D6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		846373E71FF48EF500E12B90 /* FamilyAlbum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FamilyAlbum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		846373EA1FF48EF500E12B90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		846373EC1FF48EF500E12B90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +55,7 @@
 			files = (
 				846374041FF4A41000E12B90 /* libstdc++.6.tbd in Frameworks */,
 				846374021FF48F4B00E12B90 /* libsqlite3.tbd in Frameworks */,
+				8412E5CE1FF5ADAB00EB74D6 /* ParseUI.framework in Frameworks */,
 				846374001FF48F2400E12B90 /* AudioToolbox.framework in Frameworks */,
 				846374081FF4A43A00E12B90 /* Bolts.framework in Frameworks */,
 				846373FE1FF48F1900E12B90 /* SystemConfiguration.framework in Frameworks */,
@@ -81,11 +86,13 @@
 		846373E91FF48EF500E12B90 /* FamilyAlbum */ = {
 			isa = PBXGroup;
 			children = (
+				8412E5CD1FF5ADAA00EB74D6 /* ParseUI.framework */,
 				846374061FF4A43A00E12B90 /* Bolts.framework */,
 				846374051FF4A43900E12B90 /* Parse.framework */,
 				846373EA1FF48EF500E12B90 /* AppDelegate.swift */,
 				846373EC1FF48EF500E12B90 /* ViewController.swift */,
 				8412E5C51FF4B92A00EB74D6 /* AddPhotoViewController.swift */,
+				8412E5CF1FF5AEDC00EB74D6 /* ProfileViewController.swift */,
 				8412E5C71FF4BB7000EB74D6 /* PhotoCell.swift */,
 				846373EE1FF48EF500E12B90 /* Main.storyboard */,
 				846373F11FF48EF500E12B90 /* Assets.xcassets */,
@@ -184,6 +191,7 @@
 				846373ED1FF48EF500E12B90 /* ViewController.swift in Sources */,
 				8412E5CA1FF5420300EB74D6 /* Helper.swift in Sources */,
 				8412E5CC1FF566B000EB74D6 /* Albums.swift in Sources */,
+				8412E5D01FF5AEDD00EB74D6 /* ProfileViewController.swift in Sources */,
 				8412E5C61FF4B92A00EB74D6 /* AddPhotoViewController.swift in Sources */,
 				846373EB1FF48EF500E12B90 /* AppDelegate.swift in Sources */,
 			);

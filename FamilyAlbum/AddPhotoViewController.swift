@@ -49,8 +49,10 @@ class AddPhotoViewController: UIViewController {
         }
         let album = Albums()
         album.message = message
-        album.imageß = PFFile(name: "photo.png", data: UIImagePNGRepresentation(image)!)
+        album.image = PFFile(name: "photo.png", data: UIImagePNGRepresentation(image)!)
         album.saveInBackground()
+        captionLabel.text = nil
+        imageView.image = nil
     }
     
 }

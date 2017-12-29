@@ -16,9 +16,13 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        getAlbums()
         tableView.dataSource = self
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        getAlbums()
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,10 +31,11 @@ class ViewController: UIViewController {
     }
     
     func getAlbums(){
-        let query = Albums.query()
+        let query = Albums.query()!
         query.findObjectsInBackground { (objects, error) in
             if let objs = objects as? [Albums] {
                 self.albums = objs
+                self.tableView.reloadData()
             }
         }
     }
@@ -48,6 +53,7 @@ extension ViewController: UITableViewDataSource{
         
         cell.setAlbum(album: albums[indexPath.row])
         
+        return cell
     }
 }
 

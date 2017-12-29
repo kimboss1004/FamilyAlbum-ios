@@ -19,8 +19,9 @@ class Albums: PFObject, PFSubclassing {
     @NSManaged var image: PFFile?
     
     
-    override func query() -> PFQuery<PFObject?> {
+    func query() -> PFQuery<PFObject> {
         let query = PFQuery(className: Albums.parseClassName())
         return query
     }
 }
+
